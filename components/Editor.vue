@@ -41,6 +41,7 @@ enum Role {
 
 const options = {
   automaticLayout: true,
+  minimap: { enabled: false },
 }
 
 onMounted(async () => {
