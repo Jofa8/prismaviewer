@@ -1,5 +1,5 @@
 <template>
-  <MonacoEditor v-model="val" :lang="lang" :options="options" class="h-[600px] w-full"> Loading... </MonacoEditor>
+  <MonacoEditor v-model="val" :lang="lang" :options="options" class="h-full"> Loading... </MonacoEditor>
 </template>
 
 <script lang="ts" setup>
