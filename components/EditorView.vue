@@ -1,3 +1,3 @@
 <template>
-  <div class="bg-amber-400"></div>
+  <div class="border-l border-[#e5e7eb] bg-[#fafafa]"></div>
 </template>
