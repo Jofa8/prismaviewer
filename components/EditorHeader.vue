@@ -1,3 +1,12 @@
 <template>
-  <div class="h-11 w-full border-b border-[#e5e7eb] bg-[#fafafa]"></div>
+  <div class="h-20 w-full border-b border-[#e2e8f0] bg-white px-4 py-2">
+    <div class="flex h-full items-center justify-between">
+      <div class="flex items-center">
+        <a href="https://www.prisma.io" target="_blank"><img src="/svg/logo.svg" alt="logo" /></a>
+        <a href="/editor" class="mt-1 transition-transform duration-[0.18s] ease-[ease-out] hover:-translate-y-0.5">
+          <span class="font-inter -ml-3 cursor-pointer text-[22px] leading-[100%] font-medium text-[#2d3748] not-italic">/viewer</span>
+        </a>
+      </div>
+    </div>
+  </div>
 </template>
