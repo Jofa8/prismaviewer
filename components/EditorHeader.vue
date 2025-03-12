@@ -7,7 +7,7 @@
           <span class="font-inter -ml-3 cursor-pointer text-[22px] leading-[100%] font-medium text-[#2d3748] not-italic">/viewer</span>
         </a>
       </div>
-      <a href="https://github.com/Jofa8/prismaviewer" target="_blank">
+      <a href="https://github.com/Jofa8/prismaviewer" target="_blank" class="flex items-center">
         <Icon name="mdi:github" style="width: 28px; height: 28px" class="text-[#2d3748]" />
       </a>
     </div>
