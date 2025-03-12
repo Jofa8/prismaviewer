@@ -7,9 +7,31 @@
           <span class="font-inter -ml-3 cursor-pointer text-[22px] leading-[100%] font-medium text-[#2d3748] not-italic">/viewer</span>
         </a>
       </div>
-      <a href="https://github.com/Jofa8/prismaviewer" target="_blank" class="flex items-center">
-        <Icon name="mdi:github" style="width: 28px; height: 28px" class="text-[#2d3748]" />
-      </a>
+      <div class="flex gap-4">
+        <a href="https://github.com/Jofa8/prismaviewer" target="_blank" class="flex items-center">
+          <Icon name="mdi:github" style="width: 28px; height: 28px" class="text-[#2d3748]" />
+        </a>
+        <Icon
+          :name="fullScreen ? 'ic:baseline-fullscreen-exit' : 'ic:baseline-fullscreen'"
+          style="width: 28px; height: 28px"
+          class="cursor-pointer text-[#2d3748]"
+          @click="toggleFullscreen"
+        />
+      </div>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+const fullScreen = ref(false)
+
+const toggleFullscreen = () => {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen()
+    fullScreen.value = true
+  } else {
+    document.exitFullscreen()
+    fullScreen.value = false
+  }
+}
+</script>
